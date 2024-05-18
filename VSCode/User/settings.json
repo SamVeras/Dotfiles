@@ -1,7 +1,10 @@
 {
+  /* ------------------------------- Window ------------------------------- */
   "window.commandCenter": false,
+  "window.autoDetectColorScheme": false,
+
+  /* ------------------------------- Editor ------------------------------- */
   "editor.fontFamily": "'Fira Code', 'Noto Sans Mono SemiCondensed Medium'",
-  // "terminal.integrated.fontFamily": "Inconsolata",
   "editor.fontSize": 16,
   "editor.tabSize": 2,
   "editor.fontWeight": "500",
@@ -11,50 +14,60 @@
   "editor.detectIndentation": false,
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "auto",
-  // "editor.folding": false,
+  "editor.folding": false,
   "editor.glyphMargin": false,
   "editor.cursorStyle": "block-outline",
-  "editor.lineDecorationsWidth": 2,
+  "editor.lineDecorationsWidth": 10,
   "editor.guides.bracketPairsHorizontal": false,
   "editor.autoClosingBrackets": "never",
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
   "editor.rulers": [
     { "column": 80, "color": "#ffffff1c" },
     { "column": 100, "color": "#ffffff1c" }
   ],
-  "workbench.startupEditor": "none",
+
+  /* ------------------------------- Terminal ------------------------------- */
+  // "terminal.integrated.fontFamily": "Inconsolata",
   "terminal.integrated.gpuAcceleration": "on",
-  "comment-divider.length": 78,
-  "comment-divider.shouldLengthIncludeIndent": true,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.fontSize": 16,
+
+  /* ------------------------------- Wokrbench ------------------------------ */
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Houston",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right",
+
+  /* ------------------------------- Outros ------------------------------- */
+  "security.workspace.trust.untrustedFiles": "open",
+
+  /* ------------------------------ Formatters ------------------------------ */
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "black-formatter.args": ["--line-length=100"],
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "security.workspace.trust.untrustedFiles": "open",
-  "rewrap.wrappingColumn": 100,
-  "rewrap.doubleSentenceSpacing": true,
-  "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "Houston",
-  "editor.minimap.enabled": false,
   "[cpp]": {
     "editor.defaultFormatter": "xaver.clang-format"
   },
-  "terminal.integrated.smoothScrolling": true,
-  "editor.smoothScrolling": true,
-  "git.autofetch": true,
   "[c]": {
     "editor.defaultFormatter": "xaver.clang-format"
   },
-  "C_Cpp.default.includePath": ["${workspaceFolder}/**"],
-  "terminal.integrated.fontSize": 16,
-  "clang-format.executable": "clang-format-18",
   "[latex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.iconTheme": "material-icon-theme"
+  /* ------------------------------ Extensions ------------------------------ */
+  "comment-divider.length": 78,
+  "comment-divider.shouldLengthIncludeIndent": true,
+  "black-formatter.args": ["--line-length=100"],
+  "rewrap.wrappingColumn": 100,
+  "rewrap.doubleSentenceSpacing": true,
+  "git.autofetch": true,
+  "C_Cpp.default.includePath": ["${workspaceFolder}/**"],
+  "clang-format.executable": "clang-format-18"
 }
