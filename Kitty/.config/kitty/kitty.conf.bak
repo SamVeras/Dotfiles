@@ -49,6 +49,6 @@ background_blur 0
 
 
 # BEGIN_KITTY_THEME
-# zenwritten_dark
+# Gruvbox Material Dark Hard
 include current-theme.conf
 # END_KITTY_THEME
