@@ -5,6 +5,7 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+
 # Standard plugins:  $ZSH/plugins/
 # Custom plugins:    $ZSH_CUSTOM/plugins/
 plugins=(
@@ -12,18 +13,20 @@ plugins=(
 		zsh-autosuggestions
 		zsh-syntax-highlighting
 		colored-man-pages
-    you-should-use
+#	    you-should-use
 		fzf-tab
 )
 
 source $ZSH/oh-my-zsh.sh
 
+
 # User configs
 path+=$HOME/.local/go/bin
 export EDITOR=micro
 export VISUAL="$EDITOR"
-
 alias paths="echo $PATH | tr : '\n'"
+setopt globdots
+zstyle ':completion:*' special-dirs false
 
 # Aliases para o Void Linux
 if (($+commands[xbps-install])); then
