@@ -1,8 +1,8 @@
 # Read `man 5 sway` for a complete reference.
 # Mod1: Alt, Mod4: Win.
 set $mod Mod1
-set $term foot
-#set $term kitty
+#set $term foot
+set $term kitty
 
 default_border pixel 1
 default_floating_border normal
