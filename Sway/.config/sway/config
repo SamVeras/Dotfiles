@@ -12,7 +12,7 @@ smart_gaps on
 gaps inner 10
 gaps outer 0
 
-exec $HOME/.config/sway/inactive-windows-transparency.py --opacity 0.85
+exec $HOME/Scripts/Sway/inactive-windows-transparency.py --opacity 0.85
 
 bindsym XF86MonBrightnessUp		exec light -A 7
 bindsym XF86MonBrightnessDown	exec light -U 7
