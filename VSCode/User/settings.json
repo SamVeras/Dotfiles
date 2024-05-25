@@ -35,7 +35,7 @@
 
   /* ------------------------------- Wokrbench ------------------------------ */
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Houston",
+  "workbench.colorTheme": "SeaShells (Dark)",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
 
@@ -69,5 +69,6 @@
   "rewrap.doubleSentenceSpacing": true,
   "git.autofetch": true,
   "C_Cpp.default.includePath": ["${workspaceFolder}/**"],
-  "clang-format.executable": "clang-format-18"
+  "clang-format.executable": "clang-format-18",
+  "redhat.telemetry.enabled": false
 }
