@@ -12,22 +12,29 @@ smart_gaps on
 gaps inner 10
 gaps outer 0
 
-exec $HOME/Scripts/Sway/inactive-windows-transparency.py --opacity 0.85
+#exec $HOME/Scripts/Sway/inactive-windows-transparency.py --opacity 0.85
+
+exec dbus-daemon --session --address=unix:path=$XDG_RUNTIME_DIR/bus
+exec mako
+
+output * bg ~/Imagens/mtstmichel.jpg fill
 
 bindsym XF86MonBrightnessUp		exec light -A 7
 bindsym XF86MonBrightnessDown	exec light -U 7
-bindsym $mod+p					exec grimshot save active
-bindsym $mod+Shift+s			exec grimshot save area
-bindsym $mod+Ctrl+p				exec grimshot save output
-bindsym $mod+Shift+p			exec grimshot save w
+bindsym $mod+p					exec grimshot savecopy active && notify-send "Screenshot taken" "Saved active window"
+bindsym $mod+Shift+s			exec grimshot savecopy area   && notify-send "Screenshot taken" "Saved selection"
+bindsym $mod+Ctrl+p				exec grimshot savecopy output && notify-send "Screenshot taken" "Saved current output"
+bindsym $mod+Shift+p			exec grimshot savecopy window && notify-send "Screenshot taken" "Saved window"
 
+input type:keyboard xkb_capslock disabled
+input type:keyboard xkb_numlock enabled
+
+exec pipewire
 
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu dmenu_path | wmenu | xargs swaymsg exec --
 
-#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg ~/Imagens/mtstmichel.jpg fill
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -153,23 +160,19 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-exec pipewire
 
 # Status Bar:
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
-	swaybar_command waybar
+#bar {
+    #position top
+	#swaybar_command waybar
     #status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-	status_command i3status	
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
+	#status_command i3status	
+    #colors {
+        #statusline #ffffff
+        #background #323232
+        #inactive_workspace #32323200 #32323200 #5c5c5c
+    #}
+#}
 
-# exec waybar
-
-
-include /etc/sway/config.d/*
+exec sleep 1 && exec waybar

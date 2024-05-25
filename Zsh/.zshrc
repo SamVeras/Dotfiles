@@ -19,6 +19,12 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configs
+
+if [[ ! -d "$HOME/Screenshots" ]]; then
+	mkdir -p "$HOME/Screenshots"
+fi
+export XDG_SCREENSHOTS_DIR="$HOME/Screenshots"
+
 path+=$HOME/.local/go/bin
 export EDITOR=micro
 export VISUAL="$EDITOR"
