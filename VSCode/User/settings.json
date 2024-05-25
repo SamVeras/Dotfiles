@@ -35,7 +35,7 @@
 
   /* ------------------------------- Wokrbench ------------------------------ */
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "SeaShells (Dark)",
+  "workbench.colorTheme": "Ayu Mirage Bordered",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
 
