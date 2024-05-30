@@ -17,7 +17,7 @@
   "editor.folding": false,
   "editor.glyphMargin": false,
   "editor.cursorStyle": "block-outline",
-  "editor.lineDecorationsWidth": 10,
+  "editor.lineDecorationsWidth": 15,
   "editor.guides.bracketPairsHorizontal": false,
   "editor.autoClosingBrackets": "never",
   "editor.minimap.enabled": false,
@@ -60,6 +60,9 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
   },
   /* ------------------------------ Extensions ------------------------------ */
   "comment-divider.length": 78,
