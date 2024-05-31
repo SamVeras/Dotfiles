@@ -68,7 +68,7 @@
   "comment-divider.length": 78,
   "comment-divider.shouldLengthIncludeIndent": true,
   "black-formatter.args": ["--line-length=100"],
-  "rewrap.wrappingColumn": 100,
+  "rewrap.wrappingColumn": 80,
   "rewrap.doubleSentenceSpacing": true,
   "git.autofetch": true,
   "C_Cpp.default.includePath": ["${workspaceFolder}/**"],
