@@ -35,7 +35,7 @@
 
   /* ------------------------------- Wokrbench ------------------------------ */
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.colorTheme": "Monokai",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
 
@@ -73,5 +73,8 @@
   "git.autofetch": true,
   "C_Cpp.default.includePath": ["${workspaceFolder}/**"],
   "clang-format.executable": "clang-format-18",
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "http.proxyStrictSSL": false,
+  "http.systemCertificates": false,
+  "codeium.enableCodeLens": false
 }
