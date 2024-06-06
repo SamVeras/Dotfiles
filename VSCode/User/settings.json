@@ -75,5 +75,7 @@
   "clang-format.executable": "clang-format-18",
   "redhat.telemetry.enabled": false,
   "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+  "http.proxyStrictSSL": false,
+  "http.systemCertificates": false,
   "codeium.enableCodeLens": false
 }
