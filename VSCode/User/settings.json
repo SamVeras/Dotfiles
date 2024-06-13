@@ -4,8 +4,8 @@
   "window.autoDetectColorScheme": false,
 
   /* ------------------------------- Editor ------------------------------- */
-  "editor.fontFamily": "'Fira Code', 'Noto Sans Mono SemiCondensed Medium'",
-  "editor.fontSize": 16,
+  "editor.fontFamily": "'DeJavu Sans Mono','Fira Code', 'Noto Sans Mono SemiCondensed Medium'",
+  "editor.fontSize": 14,
   "editor.tabSize": 2,
   "editor.fontWeight": "500",
   "editor.formatOnSave": true,
@@ -35,7 +35,7 @@
 
   /* ------------------------------- Wokrbench ------------------------------ */
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "SeaShells (Dark)",
+  "workbench.colorTheme": "Ayu Mirage Bordered",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
 
@@ -61,9 +61,6 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java"
-  },
   /* ------------------------------ Extensions ------------------------------ */
   "comment-divider.length": 78,
   "comment-divider.shouldLengthIncludeIndent": true,
@@ -77,5 +74,8 @@
   "C_Cpp.default.compilerPath": "/usr/bin/gcc",
   "http.proxyStrictSSL": false,
   "http.systemCertificates": false,
-  "codeium.enableCodeLens": false
+  "codeium.enableCodeLens": false,
+  "codeium.enableConfig": {
+    "*": true
+  }
 }
