@@ -2,9 +2,10 @@
   /* ------------------------------- Window ------------------------------- */
   "window.commandCenter": false,
   "window.autoDetectColorScheme": false,
+  "window.titleBarStyle": "custom",
 
   /* ------------------------------- Editor ------------------------------- */
-  "editor.fontFamily": "'DeJavu Sans Mono','Fira Code', 'Noto Sans Mono SemiCondensed Medium'",
+  "editor.fontFamily": "Cascadia Code, Comic Sans MS",
   "editor.fontSize": 14,
   "editor.tabSize": 2,
   "editor.fontWeight": "500",
@@ -35,7 +36,7 @@
 
   /* ------------------------------- Wokrbench ------------------------------ */
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.colorTheme": "Bearded Theme Black & Ruby",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
 
@@ -65,6 +66,7 @@
   "comment-divider.length": 78,
   "comment-divider.shouldLengthIncludeIndent": true,
   "black-formatter.args": ["--line-length=100"],
+  "markdown-preview-github-styles.colorTheme": "light",
   "rewrap.wrappingColumn": 80,
   "rewrap.doubleSentenceSpacing": true,
   "git.autofetch": true,
