@@ -13,7 +13,7 @@ plugins=(
 		zsh-syntax-highlighting
 		colored-man-pages
 		fzf-tab
-	    you-should-use
+	    #you-should-use
 )
 
 source $ZSH/oh-my-zsh.sh
