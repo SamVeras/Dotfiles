@@ -71,7 +71,7 @@
   "rewrap.doubleSentenceSpacing": true,
   "git.autofetch": true,
   "C_Cpp.default.includePath": ["${workspaceFolder}/**"],
-  "clang-format.executable": "clang-format-18",
+  "clang-format.executable": "clang-format",
   "redhat.telemetry.enabled": false,
   "C_Cpp.default.compilerPath": "/usr/bin/gcc",
   "http.proxyStrictSSL": false,
