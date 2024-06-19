@@ -20,6 +20,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configs
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
+
 if [[ ! -d "$HOME/Screenshots" ]]; then
 	mkdir -p "$HOME/Screenshots"
 fi
