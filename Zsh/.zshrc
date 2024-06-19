@@ -24,7 +24,8 @@ if [[ ! -d "$HOME/Screenshots" ]]; then
 	mkdir -p "$HOME/Screenshots"
 fi
 export XDG_SCREENSHOTS_DIR="$HOME/Screenshots"
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib64
+export PKG_CONFIG_PATH=PKG_CONFIG_PATH:/usr/local/lib64/pkgconfig
 
 path+=$HOME/.local/go/bin
 export EDITOR=micro
