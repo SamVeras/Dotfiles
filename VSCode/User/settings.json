@@ -9,7 +9,7 @@
   "editor.fontSize": 14,
   "editor.tabSize": 2,
   "editor.fontWeight": "500",
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.fontLigatures": true,
   "editor.indentSize": 2,
   "editor.detectIndentation": false,
