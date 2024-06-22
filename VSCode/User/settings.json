@@ -5,18 +5,18 @@
   "window.titleBarStyle": "custom",
 
   /* ------------------------------- Editor ------------------------------- */
-  "editor.fontFamily": "Cascadia Code, Comic Sans MS",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "Terminess Nerd Font, Cascadia Code, Comic Sans MS",
+  "editor.fontSize": 16,
   "editor.tabSize": 2,
   "editor.fontWeight": "500",
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.fontLigatures": true,
   "editor.indentSize": 2,
   "editor.detectIndentation": false,
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "auto",
-  "editor.folding": false,
-  "editor.glyphMargin": false,
+  "editor.folding": true,
+  "editor.glyphMargin": true,
   "editor.cursorStyle": "block-outline",
   "editor.lineDecorationsWidth": 15,
   "editor.guides.bracketPairsHorizontal": false,
@@ -36,7 +36,7 @@
 
   /* ------------------------------- Wokrbench ------------------------------ */
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Bearded Theme feat. Melle Julie",
+  "workbench.colorTheme": "Bearded Theme Monokai Reversed",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
 
@@ -79,5 +79,9 @@
   "codeium.enableCodeLens": false,
   "codeium.enableConfig": {
     "*": true
-  }
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "liveServer.settings.donotShowInfoMsg": true
 }
