@@ -5,7 +5,7 @@
   "window.titleBarStyle": "custom",
 
   /* ------------------------------- Editor ------------------------------- */
-  "editor.fontFamily": "Terminess Nerd Font, Cascadia Code, Comic Sans MS",
+  "editor.fontFamily": "FiraCode Nerd Font, InconsolataGo Nerd Font Mono, Terminess Nerd Font Mono, Comic Sans MS",
   "editor.fontSize": 16,
   "editor.tabSize": 2,
   "editor.fontWeight": "500",
@@ -29,14 +29,13 @@
   ],
 
   /* ------------------------------- Terminal ------------------------------- */
-  // "terminal.integrated.fontFamily": "Inconsolata",
+  "terminal.integrated.fontFamily": "InconsolataGo Nerd Font Mono, Cascadia Mono",
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.fontSize": 16,
 
   /* ------------------------------- Wokrbench ------------------------------ */
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Bearded Theme Monokai Reversed",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
 
@@ -83,5 +82,23 @@
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "codeium.aggressiveShutdown": true,
+  "background.enabled": true,
+  "background.useFront": false,
+  "background.fullscreen": {
+    "images": ["file:///home/sam/Pictures/Wallpapers/wallhaven-q2pqzl.jpg"],
+    "opacity": 0.95,
+    "size": "cover",
+    "position": "center",
+    "interval": 0
+  },
+  "workbench.layoutControl.enabled": false,
+  "haskell.manageHLS": "PATH",
+  "files.associations": {
+    "*.tpp": "cpp"
+  },
+  "glassit.alpha": 200,
+  "workbench.colorTheme": "Sapphire",
+  "terminal.integrated.enableMultiLinePasteWarning": false
 }

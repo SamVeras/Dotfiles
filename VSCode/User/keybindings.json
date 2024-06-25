@@ -33,5 +33,19 @@
     "key": "alt+\\",
     "command": "-editor.action.inlineSuggest.trigger",
     "when": "editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "-workbench.action.quit"
+  },
+  {
+    "key": "shift+t",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
   }
 ]
