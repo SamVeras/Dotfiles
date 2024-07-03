@@ -9,8 +9,8 @@
   /* ---------------------------------------------------------------------- */
   /*                                 Editor                                 */
   /* ---------------------------------------------------------------------- */
-  "editor.fontFamily": "InconsolataGo Nerd Font Mono, Terminess Nerd Font Mono",
-  "editor.fontSize": 16,
+  "editor.fontFamily": "DejaVu Sans Mono, InconsolataGo Nerd Font Mono, Terminess Nerd Font Mono",
+  "editor.fontSize": 14,
   "editor.tabSize": 4,
   "editor.lineHeight": 1.1,
   "editor.fontWeight": "500",
@@ -47,7 +47,7 @@
   /* ---------------------------------------------------------------------- */
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.colorTheme": "Bearded Theme Monokai Black",
   "workbench.layoutControl.enabled": false,
 
   /* ---------------------------------------------------------------------- */
@@ -108,5 +108,6 @@
   "http.systemCertificates": false,
   "files.associations": {
     "*.tpp": "cpp"
-  }
+  },
+  "editor.lineNumbers": "relative"
 }
