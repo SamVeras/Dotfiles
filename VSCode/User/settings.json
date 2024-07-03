@@ -1,17 +1,22 @@
 {
-  /* ------------------------------- Window ------------------------------- */
+  /* -------------------------------------------------------------------- */
+  /*                                Window                                */
+  /* -------------------------------------------------------------------- */
   "window.commandCenter": false,
   "window.autoDetectColorScheme": false,
   "window.titleBarStyle": "custom",
 
-  /* ------------------------------- Editor ------------------------------- */
-  "editor.fontFamily": "FiraCode Nerd Font, InconsolataGo Nerd Font Mono, Terminess Nerd Font Mono, Comic Sans MS",
+  /* ---------------------------------------------------------------------- */
+  /*                                 Editor                                 */
+  /* ---------------------------------------------------------------------- */
+  "editor.fontFamily": "InconsolataGo Nerd Font Mono, Terminess Nerd Font Mono",
   "editor.fontSize": 16,
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
+  "editor.lineHeight": 1.1,
   "editor.fontWeight": "500",
   "editor.formatOnSave": true,
   "editor.fontLigatures": true,
-  "editor.indentSize": 2,
+  "editor.indentSize": 4,
   "editor.detectIndentation": false,
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "auto",
@@ -28,21 +33,31 @@
     { "column": 100, "color": "#ffffff1c" }
   ],
 
-  /* ------------------------------- Terminal ------------------------------- */
+  /* ---------------------------------------------------------------------- */
+  /*                                Terminal                                */
+  /* ---------------------------------------------------------------------- */
   "terminal.integrated.fontFamily": "InconsolataGo Nerd Font Mono, Cascadia Mono",
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.fontSize": 16,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
 
-  /* ------------------------------- Wokrbench ------------------------------ */
+  /* ---------------------------------------------------------------------- */
+  /*                                Workbench                               */
+  /* ---------------------------------------------------------------------- */
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.layoutControl.enabled": false,
 
-  /* ------------------------------- Outros ------------------------------- */
+  /* ---------------------------------------------------------------------- */
+  /*                                 Others                                 */
+  /* ---------------------------------------------------------------------- */
   "security.workspace.trust.untrustedFiles": "open",
 
-  /* ------------------------------ Formatters ------------------------------ */
+  /* ---------------------------------------------------------------------- */
+  /*                               Formatters                               */
+  /* ---------------------------------------------------------------------- */
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
@@ -61,44 +76,37 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  /* ------------------------------ Extensions ------------------------------ */
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  /* ---------------------------------------------------------------------- */
+  /*                               Extensions                               */
+  /* ---------------------------------------------------------------------- */
+  /* -------------------------------- Black ------------------------------- */
+  "black-formatter.args": ["--line-length=80"],
+  /* --------------------------- Comment Divider -------------------------- */
   "comment-divider.length": 78,
   "comment-divider.shouldLengthIncludeIndent": true,
-  "black-formatter.args": ["--line-length=100"],
-  "markdown-preview-github-styles.colorTheme": "light",
+  /* ------------------------------- Rewrap ------------------------------- */
   "rewrap.wrappingColumn": 80,
   "rewrap.doubleSentenceSpacing": true,
+  /* --------------------------------- Git -------------------------------- */
   "git.autofetch": true,
+  /* -------------------------------- C/C++ ------------------------------- */
   "C_Cpp.default.includePath": ["${workspaceFolder}/**"],
-  "clang-format.executable": "clang-format",
-  "redhat.telemetry.enabled": false,
   "C_Cpp.default.compilerPath": "/usr/bin/gcc",
-  "http.proxyStrictSSL": false,
-  "http.systemCertificates": false,
+  /* ---------------------------- Clang Format ---------------------------- */
+  "clang-format.executable": "clang-format",
+  /* ------------------------------- Codeium ------------------------------ */
+  "codeium.aggressiveShutdown": true,
   "codeium.enableCodeLens": false,
   "codeium.enableConfig": {
     "*": true
   },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "liveServer.settings.donotShowInfoMsg": true,
-  "codeium.aggressiveShutdown": true,
-  "background.enabled": true,
-  "background.useFront": false,
-  "background.fullscreen": {
-    "images": ["file:///home/sam/Pictures/Wallpapers/wallhaven-q2pqzl.jpg"],
-    "opacity": 0.95,
-    "size": "cover",
-    "position": "center",
-    "interval": 0
-  },
-  "workbench.layoutControl.enabled": false,
-  "haskell.manageHLS": "PATH",
+  /* --------------------------------- Etc -------------------------------- */
+  "http.proxyStrictSSL": false,
+  "http.systemCertificates": false,
   "files.associations": {
     "*.tpp": "cpp"
-  },
-  "glassit.alpha": 200,
-  "workbench.colorTheme": "Sapphire",
-  "terminal.integrated.enableMultiLinePasteWarning": false
+  }
 }
