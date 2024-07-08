@@ -9,10 +9,10 @@
   /* ---------------------------------------------------------------------- */
   /*                                 Editor                                 */
   /* ---------------------------------------------------------------------- */
-  "editor.fontFamily": "DejaVu Sans Mono, InconsolataGo Nerd Font Mono, Terminess Nerd Font Mono",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "JetBrainsMono Nerd Font, InconsolataGo Nerd Font Mono, DejaVu Sans Mono, Terminess Nerd Font Mono",
+  "editor.fontSize": 16,
   "editor.tabSize": 4,
-  "editor.lineHeight": 1.1,
+  //   "editor.lineHeight": 1.3,
   "editor.fontWeight": "500",
   "editor.formatOnSave": true,
   "editor.fontLigatures": true,
@@ -47,7 +47,6 @@
   /* ---------------------------------------------------------------------- */
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Bearded Theme Monokai Black",
   "workbench.layoutControl.enabled": false,
 
   /* ---------------------------------------------------------------------- */
@@ -109,5 +108,12 @@
   "files.associations": {
     "*.tpp": "cpp"
   },
-  "editor.lineNumbers": "relative"
+  "python.languageServer": "Pylance",
+  "python.defaultInterpreterPath": "python",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "workbench.colorTheme": "One Monokai"
 }
