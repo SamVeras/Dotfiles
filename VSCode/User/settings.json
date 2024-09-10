@@ -9,8 +9,8 @@
   /* ---------------------------------------------------------------------- */
   /*                                 Editor                                 */
   /* ---------------------------------------------------------------------- */
-  "editor.fontFamily": "JetBrainsMono Nerd Font, InconsolataGo Nerd Font Mono, DejaVu Sans Mono, Terminess Nerd Font Mono",
-  "editor.fontSize": 16,
+  "editor.fontFamily": "Hack, InconsolataGo Nerd Font Mono, Hack, JetBrainsMono Nerd Font, DejaVu Sans Mono, Terminess Nerd Font Mono",
+  "editor.fontSize": 15,
   "editor.tabSize": 4,
   //   "editor.lineHeight": 1.3,
   "editor.fontWeight": "500",
@@ -36,7 +36,7 @@
   /* ---------------------------------------------------------------------- */
   /*                                Terminal                                */
   /* ---------------------------------------------------------------------- */
-  "terminal.integrated.fontFamily": "InconsolataGo Nerd Font Mono, Cascadia Mono",
+  "terminal.integrated.fontFamily": "Hack, InconsolataGo Nerd Font Mono, Cascadia Mono",
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.fontSize": 16,
@@ -46,7 +46,6 @@
   /*                                Workbench                               */
   /* ---------------------------------------------------------------------- */
   "workbench.startupEditor": "none",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
 
   /* ---------------------------------------------------------------------- */
@@ -115,5 +114,6 @@
     "workbench.action.tasks.configureTaskRunner",
     "workbench.action.tasks.runTask"
   ],
-  "workbench.colorTheme": "One Monokai"
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "explorer.compactFolders": false
 }
