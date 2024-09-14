@@ -1,10 +1,12 @@
-#font_family      Inconsolata
-font_family      InconsolataGo Nerd Font
+#font_family     Inconsolata
+#font_family      InconsolataGo Nerd Font
+font_family		 Hack
+#font_family     Terminess Nerd Font Mono
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
 
-font_size 14.0
+font_size 12.0
 # cursor none
 # none = reverse
 cursor_beam_thickness 1.5
@@ -33,8 +35,8 @@ hide_window_decorations yes
 resize_in_steps yes
 
 # background #dddddd
-background_opacity 0.96
-background_blur 0
+background_opacity 0.97
+background_blur 1
 
 # background_image none
 # background_image_layout tiled
@@ -50,6 +52,6 @@ background_blur 0
 
 
 # BEGIN_KITTY_THEME
-# Sea Shells
+# ENCOM
 include current-theme.conf
 # END_KITTY_THEME
