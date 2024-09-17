@@ -10,7 +10,7 @@
   /*                                 Editor                                 */
   /* ---------------------------------------------------------------------- */
   "editor.fontFamily": "Hack, InconsolataGo Nerd Font Mono, Hack, JetBrainsMono Nerd Font, DejaVu Sans Mono, Terminess Nerd Font Mono",
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   "editor.tabSize": 4,
   //   "editor.lineHeight": 1.3,
   "editor.fontWeight": "500",
@@ -81,7 +81,7 @@
   /*                               Extensions                               */
   /* ---------------------------------------------------------------------- */
   /* -------------------------------- Black ------------------------------- */
-  "black-formatter.args": ["--line-length=80"],
+  "black-formatter.args": ["--line-length=100"],
   /* --------------------------- Comment Divider -------------------------- */
   "comment-divider.length": 78,
   "comment-divider.shouldLengthIncludeIndent": true,
@@ -108,12 +108,16 @@
     "*.tpp": "cpp"
   },
   "python.languageServer": "Pylance",
-  "python.defaultInterpreterPath": "python",
+  "python.defaultInterpreterPath": "/home/sam/.miniconda/envs/manim-env/bin/python",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "cmake.pinnedCommands": [
     "workbench.action.tasks.configureTaskRunner",
     "workbench.action.tasks.runTask"
   ],
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
-  "explorer.compactFolders": false
+  "explorer.compactFolders": false,
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
