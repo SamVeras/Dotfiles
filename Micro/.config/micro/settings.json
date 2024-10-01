@@ -1,0 +1,12 @@
+{
+    "basename": true,
+    "colorcolumn": 80,
+    "colorscheme": "material-tc",
+    "diff": false,
+    "hlsearch": true,
+    "indentchar": "|",
+    "rmtrailingws": true,
+    "scrollbar": true,
+    "scrollbarchar": ":",
+    "softwrap": true
+}

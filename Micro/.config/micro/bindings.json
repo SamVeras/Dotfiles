@@ -1,0 +1,6 @@
+{
+	"Ctrl-w": "DeleteWordLeft",
+	"Ctrl-h": "NextSplit",
+	"Alt-/": "lua:comment.comment",
+	"CtrlUnderscore": "lua:comment.comment"
+}
