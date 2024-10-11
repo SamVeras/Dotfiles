@@ -23,14 +23,13 @@
   "editor.fontLigatures": true,
   "editor.indentSize": 4,
   "editor.detectIndentation": false,
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.vertical": "auto",
-  "editor.folding": true,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 16,
+  "editor.folding": false,
   "editor.glyphMargin": false,
-  "editor.lineDecorationsWidth": 20,
+  "editor.lineDecorationsWidth": 10,
   "editor.guides.bracketPairsHorizontal": false,
   "editor.autoClosingBrackets": "never",
-  "editor.minimap.enabled": false,
   "editor.smoothScrolling": true,
   "editor.rulers": [
     { "column": 80, "color": "#ffffff1c" },
@@ -39,6 +38,7 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "phase",
+  "editor.scrollbar.horizontal": "hidden",
 
   /* ---------------------------------------------------------------------- */
   /*                                Terminal                                */
@@ -55,8 +55,8 @@
   /* ---------------------------------------------------------------------- */
 
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Monokai Pro",
-  "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.colorTheme": "Monokai Vibrant",
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
   "workbench.layoutControl.enabled": false,
