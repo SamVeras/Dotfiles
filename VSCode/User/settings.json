@@ -14,10 +14,10 @@
   /*                                 Editor                                 */
   /* ---------------------------------------------------------------------- */
 
-  "editor.fontFamily": "Terminus \\(TTF\\), Hack, InconsolataGo Nerd Font Mono, Hack, JetBrainsMono Nerd Font, DejaVu Sans Mono, Terminess Nerd Font Mono",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "JetBrainsMono Nerd Font, Terminus \\(TTF\\), Hack, InconsolataGo Nerd Font Mono, JetBrainsMono Nerd Font, DejaVu Sans Mono, Terminess Nerd Font Mono",
+  "editor.fontSize": 16,
   "editor.tabSize": 4,
-  //   "editor.lineHeight": 1.3,
+  "editor.lineHeight": 1.25,
   //   "editor.fontWeight": "500",
   "editor.formatOnSave": true,
   "editor.fontLigatures": true,
@@ -55,11 +55,18 @@
   /* ---------------------------------------------------------------------- */
 
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Monokai Vibrant",
-  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
   "workbench.layoutControl.enabled": false,
+
+  /* ----------------------------------------------------------------------- */
+  /*                                 Zen mode                                */
+  /* ----------------------------------------------------------------------- */
+
+  "zenMode.hideLineNumbers": false,
+  "zenMode.showTabs": "none",
+  "zenMode.hideActivityBar": true,
+  "zenMode.fullScreen": true,
 
   /* ---------------------------------------------------------------------- */
   /*                                 Others                                 */
@@ -107,7 +114,7 @@
   "black-formatter.args": ["--line-length=100"],
 
   /* --------------------------- Comment Divider -------------------------- */
-  "comment-divider.length": 78,
+  "comment-divider.length": 80,
   "comment-divider.shouldLengthIncludeIndent": true,
 
   /* ------------------------------- Rewrap ------------------------------- */
@@ -262,5 +269,14 @@
         }
       }
     ]
-  }
+  },
+  "workbench.colorTheme": "GitHub Dark",
+  "zig.path": "zig",
+  "zig.zls.path": "/home/sam/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+  "zig.initialSetupDone": true,
+  "zig.zls.inlayHintsExcludeSingleArgument": false,
+  "zig.zls.inlayHintsShowBuiltin": false,
+  "zig.zls.inlayHintsShowParameterName": false,
+  "zig.zls.inlayHintsShowStructLiteralFieldType": false,
+  "zig.zls.inlayHintsShowVariableTypeHints": false
 }
