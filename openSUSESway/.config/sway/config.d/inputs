@@ -1,0 +1,10 @@
+input "2362:597:HTIX5288:00_093A:0255_Touchpad" {
+	natural_scroll 	disabled
+	dwt 			enabled
+	scroll_method	two_finger
+	tap				enabled
+}
+
+input "1:1:AT_Translated_Set_2_keyboard" {
+	xkb_layout br
+}
