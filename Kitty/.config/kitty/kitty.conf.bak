@@ -49,6 +49,6 @@ background_blur 1
 
 
 # BEGIN_KITTY_THEME
-# Tomorrow Night Blue
+# Cobalt2
 include current-theme.conf
 # END_KITTY_THEME

@@ -1,7 +1,7 @@
 {
     "basename": true,
     "colorcolumn": 80,
-    "colorscheme": "atom-dark",
+    "colorscheme": "cmc-tc",
     "diff": false,
     "hlsearch": true,
     "indentchar": "|",
