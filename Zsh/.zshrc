@@ -22,12 +22,11 @@ source $ZSH/oh-my-zsh.sh
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 
-if [[ ! -d "$HOME/Screenshots" ]]; then
-	mkdir -p "$HOME/Screenshots"
-fi
-export XDG_SCREENSHOTS_DIR="$HOME/Screenshots"
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib64
+# export XDG_SCREENSHOTS_DIR="$HOME/media/screenshots"
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib64:$HOME/lib
 export PKG_CONFIG_PATH=PKG_CONFIG_PATH:/usr/local/lib64/pkgconfig
+
+export GRIM_DEFAULT_DIR="$HOME/media/screenshots"
 
 path+=$HOME/.local/go/bin
 path+=$HOME/.local/bin

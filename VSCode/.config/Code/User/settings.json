@@ -14,14 +14,14 @@
   /*                                 Editor                                 */
   /* ---------------------------------------------------------------------- */
 
-  "editor.fontFamily": "JetBrainsMono Nerd Font, Terminus \\(TTF\\), Hack, InconsolataGo Nerd Font Mono, JetBrainsMono Nerd Font, DejaVu Sans Mono, Terminess Nerd Font Mono",
-  "editor.fontSize": 16,
-  "editor.tabSize": 4,
+  "editor.fontFamily": "CommitMono Nerd Font Mono",
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
   "editor.lineHeight": 1.25,
-  //   "editor.fontWeight": "500",
+  "editor.fontWeight": "500",
   "editor.formatOnSave": true,
-  "editor.fontLigatures": true,
-  "editor.indentSize": 4,
+  "editor.fontLigatures": false,
+  "editor.indentSize": 2,
   "editor.detectIndentation": false,
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.verticalScrollbarSize": 16,
@@ -44,10 +44,10 @@
   /*                                Terminal                                */
   /* ---------------------------------------------------------------------- */
 
-  "terminal.integrated.fontFamily": "Hack, InconsolataGo Nerd Font Mono, Cascadia Mono",
+  "terminal.integrated.fontFamily": "CommitMono Nerd Font Mono",
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.smoothScrolling": true,
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.enableMultiLinePasteWarning": false,
 
   /* ---------------------------------------------------------------------- */
@@ -270,7 +270,7 @@
       }
     ]
   },
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "Cobalt2",
   "zig.path": "zig",
   "zig.zls.path": "/home/sam/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
   "zig.initialSetupDone": true,

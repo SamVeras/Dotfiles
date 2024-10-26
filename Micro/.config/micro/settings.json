@@ -1,12 +1,13 @@
 {
     "basename": true,
     "colorcolumn": 80,
-    "colorscheme": "one-dark",
+    "colorscheme": "atom-dark",
     "diff": false,
     "hlsearch": true,
     "indentchar": "|",
     "rmtrailingws": true,
     "scrollbar": true,
     "scrollbarchar": ":",
-    "softwrap": true
+    "tabsize": 2,
+    "tabstospaces": true
 }
