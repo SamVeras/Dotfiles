@@ -54,6 +54,7 @@
   /*                                Workbench                               */
   /* ---------------------------------------------------------------------- */
 
+  "workbench.colorTheme": "Cobalt Next",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
@@ -111,7 +112,7 @@
   /* ---------------------------------------------------------------------- */
 
   /* -------------------------------- Black ------------------------------- */
-  "black-formatter.args": ["--line-length=100"],
+  "black-formatter.args": ["--line-length=80"],
 
   /* --------------------------- Comment Divider -------------------------- */
   "comment-divider.length": 80,
@@ -142,6 +143,17 @@
   /* -------------------------------- Latex ------------------------------- */
   "latex-workshop.formatting.latex": "latexindent",
 
+  /* ---------------------------------- Zig -------------------------------- */
+
+  "zig.initialSetupDone": true,
+  "zig.path": "zig",
+  "zig.zls.path": "/home/sam/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+  "zig.zls.inlayHintsExcludeSingleArgument": false,
+  "zig.zls.inlayHintsShowBuiltin": false,
+  "zig.zls.inlayHintsShowParameterName": false,
+  "zig.zls.inlayHintsShowStructLiteralFieldType": false,
+  "zig.zls.inlayHintsShowVariableTypeHints": false,
+
   /* ---------------------------------------------------------------------- */
   /*                                  Etc.                                  */
   /* ---------------------------------------------------------------------- */
@@ -153,130 +165,5 @@
   },
   "python.languageServer": "Pylance",
   "python.defaultInterpreterPath": "/home/sam/.miniconda/envs/manim-env/bin/python",
-  "cmake.pinnedCommands": [
-    "workbench.action.tasks.configureTaskRunner",
-    "workbench.action.tasks.runTask"
-  ],
-  "explorer.compactFolders": false,
-
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          "comment",
-          "comment.block",
-          "comment.block.documentation",
-          "comment.line",
-          "constant",
-          "constant.character",
-          "constant.character.escape",
-          "constant.numeric",
-          "constant.numeric.integer",
-          "constant.numeric.float",
-          "constant.numeric.hex",
-          "constant.numeric.octal",
-          "constant.other",
-          "constant.regexp",
-          "constant.rgb-value",
-          "emphasis",
-          "entity",
-          "entity.name",
-          "entity.name.class",
-          "entity.name.function",
-          "entity.name.method",
-          "entity.name.section",
-          "entity.name.selector",
-          "entity.name.tag",
-          "entity.name.type",
-          "entity.other",
-          "entity.other.attribute-name",
-          "entity.other.inherited-class",
-          "invalid",
-          "invalid.deprecated",
-          "invalid.illegal",
-          "keyword",
-          "keyword.control",
-          "keyword.operator",
-          "keyword.operator.new",
-          "keyword.operator.assignment",
-          "keyword.operator.arithmetic",
-          "keyword.operator.logical",
-          "keyword.other",
-          "markup",
-          "markup.bold",
-          "markup.changed",
-          "markup.deleted",
-          "markup.heading",
-          "markup.inline.raw",
-          "markup.inserted",
-          "markup.italic",
-          "markup.list",
-          "markup.list.numbered",
-          "markup.list.unnumbered",
-          "markup.other",
-          "markup.quote",
-          "markup.raw",
-          "markup.underline",
-          "markup.underline.link",
-          "meta",
-          "meta.block",
-          "meta.cast",
-          "meta.class",
-          "meta.function",
-          "meta.function-call",
-          "meta.preprocessor",
-          "meta.return-type",
-          "meta.selector",
-          "meta.tag",
-          "meta.type.annotation",
-          "meta.type",
-          "punctuation.definition.string.begin",
-          "punctuation.definition.string.end",
-          "punctuation.separator",
-          "punctuation.separator.continuation",
-          "punctuation.terminator",
-          "storage",
-          "storage.modifier",
-          "storage.type",
-          "string",
-          "string.interpolated",
-          "string.other",
-          "string.quoted",
-          "string.quoted.double",
-          "string.quoted.other",
-          "string.quoted.single",
-          "string.quoted.triple",
-          "string.regexp",
-          "string.unquoted",
-          "strong",
-          "support",
-          "support.class",
-          "support.constant",
-          "support.function",
-          "support.other",
-          "support.type",
-          "support.type.property-name",
-          "support.variable",
-          "variable",
-          "variable.language",
-          "variable.name",
-          "variable.other",
-          "variable.other.readwrite",
-          "variable.parameter"
-        ],
-        "settings": {
-          "fontStyle": ""
-        }
-      }
-    ]
-  },
-  "workbench.colorTheme": "Cobalt2",
-  "zig.path": "zig",
-  "zig.zls.path": "/home/sam/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
-  "zig.initialSetupDone": true,
-  "zig.zls.inlayHintsExcludeSingleArgument": false,
-  "zig.zls.inlayHintsShowBuiltin": false,
-  "zig.zls.inlayHintsShowParameterName": false,
-  "zig.zls.inlayHintsShowStructLiteralFieldType": false,
-  "zig.zls.inlayHintsShowVariableTypeHints": false
+  "explorer.compactFolders": false
 }
