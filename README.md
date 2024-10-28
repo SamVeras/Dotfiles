@@ -12,8 +12,11 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 .
 ├── .config
 ├── .dots
+├── apps
+│   └── <app folders>
 ├── bin
 │   └── <binary executables>
+│   └── <app symlinks>
 ├── desk
 ├── dev
 ├── docs
