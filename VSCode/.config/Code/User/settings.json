@@ -15,7 +15,7 @@
   /* ---------------------------------------------------------------------- */
 
   "editor.fontFamily": "CommitMono Nerd Font Mono",
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.tabSize": 2,
   "editor.lineHeight": 1.25,
   "editor.fontWeight": "500",
@@ -54,7 +54,7 @@
   /*                                Workbench                               */
   /* ---------------------------------------------------------------------- */
 
-  "workbench.colorTheme": "Cobalt Next",
+  "workbench.colorTheme": "1337",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
