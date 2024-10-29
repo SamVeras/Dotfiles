@@ -1,7 +1,7 @@
 {
     "basename": true,
     "colorcolumn": 80,
-    "colorscheme": "cmc-16",
+    "colorscheme": "dukedark-tc",
     "diff": false,
     "hlsearch": true,
     "indentchar": "|",
