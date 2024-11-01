@@ -1,0 +1,6 @@
+bindsym $mod+s        scratchpad show
+bindsym $mod+Shift+s  scratchpad move
+
+bindsym $mod+t        layout stacking
+bindsym $mod+w        layout tabbed
+bindsym $mod+e        layout toggle split

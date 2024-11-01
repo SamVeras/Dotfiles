@@ -54,7 +54,7 @@
   /*                                Workbench                               */
   /* ---------------------------------------------------------------------- */
 
-  "workbench.colorTheme": "1337",
+  "workbench.colorTheme": "GitHub Dark Default",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
