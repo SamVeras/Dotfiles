@@ -17,7 +17,7 @@
   "editor.fontFamily": "CommitMono Nerd Font Mono",
   "editor.fontSize": 16,
   "editor.tabSize": 2,
-  "editor.lineHeight": 1.25,
+  // "editor.lineHeight": 1.25,
   "editor.fontWeight": "500",
   "editor.formatOnSave": true,
   "editor.fontLigatures": false,
@@ -32,8 +32,9 @@
   "editor.autoClosingBrackets": "never",
   "editor.smoothScrolling": true,
   "editor.rulers": [
-    { "column": 80, "color": "#ffffff1c" },
-    { "column": 100, "color": "#ffffff1c" }
+    { "column": 80, "color": "#ffffff0F" },
+    { "column": 100, "color": "#ffffff1F" },
+    { "column": 120, "color": "#ffffff2F" }
   ],
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.cursorSmoothCaretAnimation": "on",
@@ -54,7 +55,8 @@
   /*                                Workbench                               */
   /* ---------------------------------------------------------------------- */
 
-  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.colorTheme": "Visual Studio Dark - C++",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
@@ -115,8 +117,11 @@
   "black-formatter.args": ["--line-length=80"],
 
   /* --------------------------- Comment Divider -------------------------- */
-  "comment-divider.length": 80,
+  "comment-divider.length": 100,
   "comment-divider.shouldLengthIncludeIndent": true,
+  "comment-divider.languagesMap": {
+    "c": ["//", "//"]
+  },
 
   /* ------------------------------- Rewrap ------------------------------- */
   "rewrap.wrappingColumn": 80,
@@ -165,5 +170,7 @@
   },
   "python.languageServer": "Pylance",
   "python.defaultInterpreterPath": "/home/sam/.miniconda/envs/manim-env/bin/python",
-  "explorer.compactFolders": false
+  "explorer.compactFolders": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false
 }
