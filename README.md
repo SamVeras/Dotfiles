@@ -33,7 +33,9 @@ home
         └── downloads
 ```
 
-| Nome                      | Pacote              | Descrição                                                                                              |
+## **PACOTES**
+
+| Nome                      | Pacote              |                                                                                                        |
 | ------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------ |
 | **Zsh**                   | zsh                 | Shell with comprehensive completion                                                                    |
 | **kitty**                 | kitty               | A GPU-based terminal emulator                                                                          |
