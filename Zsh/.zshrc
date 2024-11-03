@@ -13,54 +13,71 @@ plugins=(
 		zsh-syntax-highlighting
 		colored-man-pages
 		fzf-tab
-	    #you-should-use
+	  you-should-use
+    wd
 )
 
 source $ZSH/oh-my-zsh.sh
 
-# User configs
+# ----------------------------------------- User Configs ----------------------------------------- #
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
-
-# export XDG_SCREENSHOTS_DIR="$HOME/media/screenshots"
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib64:$HOME/lib
-export PKG_CONFIG_PATH=PKG_CONFIG_PATH:/usr/local/lib64/pkgconfig
-
-export GRIM_DEFAULT_DIR="$HOME/media/screenshots"
-
-path+=$HOME/.local/go/bin
-path+=$HOME/.local/bin
-path+=$HOME/.miniconda/bin
-path+=$HOME/miniconda3/bin
-export EDITOR=micro
-export VISUAL="$EDITOR"
-alias paths="echo $PATH | tr : '\n'"
 setopt globdots
 zstyle ':completion:*' special-dirs false
 
-# Aliases para o Void Linux
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib64:$HOME/lib
+export PKG_CONFIG_PATH=PKG_CONFIG_PATH:/usr/local/lib64/pkgconfig
+export GRIM_DEFAULT_DIR="$HOME/media/screenshots"
+
+
+export EDITOR=micro
+export VISUAL="$EDITOR"
+
+alias paths="echo $PATH | tr : '\n'"
+
+# Void Linux aliases
 if (($+commands[xbps-install])); then
-  alias xbpi="sudo xbps-install"
-  alias xbps="xbps-query -Rs"
-  alias xbpq="xbps-query"
-  alias xbpr="sudo xbps-remove"
-  alias xbpu="sudo xbps-install -Syu"
+    alias xbpi="sudo xbps-install"
+    alias xbps="xbps-query -Rs"
+    alias xbpq="xbps-query"
+    alias xbpr="sudo xbps-remove"
+    alias xbpu="sudo xbps-install -Syu"
 fi
+
+# Home directories setup
+mydirs=(
+    "$HOME/apps"
+    "$HOME/bin"
+    "$HOME/desk"
+    "$HOME/dev"
+    "$HOME/docs"
+    "$HOME/lib"
+    "$HOME/media"
+    "$HOME/media/music"
+    "$HOME/media/pics"
+    "$HOME/media/screenshots"
+    "$HOME/media/videos"
+    "$HOME/media/wallpapers"
+    "$HOME/scripts"
+    "$HOME/share"
+    "$HOME/share/public"
+    "$HOME/share/templates"
+    "$HOME/tmp"
+    "$HOME/tmp/downloads"
+)
+
+for dir in $mydirs; do
+    if [[ ! -d "$dir" ]]; then
+        echo "$dir does not exist. Creating it..."
+        mkdir -p "$dir"
+    fi
+done
+
+if [[ ":$PATH:" != *":$HOME/bin:"* ]]; then
+    path+="$HOME/bin:"
+fi
+
+
+path+=($HOME/.local/bin)
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/sam/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/sam/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/sam/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/sam/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
