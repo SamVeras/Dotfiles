@@ -2,23 +2,6 @@
 
 ![](https://github.com/SamVeras/Dotfiles/blob/main/c%C3%A3o%20chupando%20manga.gif)
 
-
-## **ZSH PLUGIN SETUP**
-
-```Sh
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" && \
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && \
-git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab && \
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && \
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-```
-
-
-## **PACOTES**
-
-`zsh kitty ranger micro (micro-editor) lsd stow git opi (on openSUSE) tldr (tlrc, tealdeer) fzf code (vscode) discord steam steam-devices`
-
-
 ## **HOME SETUP**
 
 ```
@@ -50,19 +33,20 @@ home
         └── downloads
 ```
 
-
-## **EDUROAM SETUP**
-
-```Sh
-nmcli con add \
-	type wifi \
-	ifname wlp1s0 \
-	con-name eduroam \
-	ssid eduroam \
-	ipv4.method auto \
-	802-1x.eap peap \
-	802-1x.phase2-auth mschapv2 \
-	802-1x.identity <USERNAME> \
-	802-1x.password <PASSWORD> \
-	wifi-sec.key-mgmt wpa-eap
-```
+| Nome                      | Pacote              | Descrição                                                                                              |
+| ------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Zsh**                   | zsh                 | Shell with comprehensive completion                                                                    |
+| **kitty**                 | kitty               | A GPU-based terminal emulator                                                                          |
+| **ranger**                | ranger              | Console File Manager                                                                                   |
+| **micro**                 | micro, micro-editor | Micro is a terminal-based text editor that aims to be easy to use and intuitive                        |
+| **LSD / LSDeluxe**        | lsd                 | Ls command with a lot of pretty colors and some other stuff                                            |
+| **GNU Stow**              | stow                | Manage the installation of software packages from source                                               |
+| **Git**                   | git                 | Fast, scalable, distributed revision control system                                                    |
+| **OBS Package Installer** | opi                 | Search and install almost all packages available for openSUSE and SLE                                  |
+| **tlrc**                  | tlrc                | A tldr-pages client written in Rust                                                                    |
+| **fzf**                   | fzf                 | A command-line fuzzy finder                                                                            |
+| **Visual Studio Code**    | code, vscode        | Free, lightweight, and powerful source code editor that allows developers to write and work on code.   |
+| **Discord**               | discord             | Voice and Text Chat for Gamers                                                                         |
+| **Flatpak**               | flatpak             | OSTree based application bundles management                                                            |
+| **Steam**                 | steam               | Steam is a digital distribution platform and storefront for video games, managed by Valve Corporation. |
+| **Steam Devices**         | steam-devices       | Device support for Steam-related hardware.                                                             |
