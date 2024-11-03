@@ -16,12 +16,12 @@
 
   "editor.fontFamily": "CommitMono Nerd Font Mono",
   "editor.fontSize": 16,
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   // "editor.lineHeight": 1.25,
   "editor.fontWeight": "500",
   "editor.formatOnSave": true,
   "editor.fontLigatures": false,
-  "editor.indentSize": 2,
+  "editor.indentSize": 4,
   "editor.detectIndentation": false,
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.verticalScrollbarSize": 16,
@@ -120,7 +120,7 @@
   "comment-divider.length": 100,
   "comment-divider.shouldLengthIncludeIndent": true,
   "comment-divider.languagesMap": {
-    "c": ["//", "//"]
+    // "c": ["//", "//"]
   },
 
   /* ------------------------------- Rewrap ------------------------------- */
