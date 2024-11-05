@@ -67,7 +67,7 @@
   /* ----------------------------------------------------------------------- */
 
   "zenMode.hideLineNumbers": false,
-  "zenMode.showTabs": "none",
+  "zenMode.showTabs": "multiple",
   "zenMode.hideActivityBar": true,
   "zenMode.fullScreen": true,
 
@@ -117,7 +117,7 @@
   "black-formatter.args": ["--line-length=80"],
 
   /* --------------------------- Comment Divider -------------------------- */
-  "comment-divider.length": 100,
+  "comment-divider.length": 80,
   "comment-divider.shouldLengthIncludeIndent": true,
   "comment-divider.languagesMap": {
     // "c": ["//", "//"]
@@ -169,8 +169,9 @@
     "*.tpp": "cpp"
   },
   "python.languageServer": "Pylance",
-  "python.defaultInterpreterPath": "/home/sam/.miniconda/envs/manim-env/bin/python",
   "explorer.compactFolders": false,
   "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.renderSideBySide": false
+  "diffEditor.renderSideBySide": false,
+  "tinymist.formatterMode": "typstyle",
+  "editor.minimap.renderCharacters": false
 }
