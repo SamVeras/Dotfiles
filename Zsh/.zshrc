@@ -34,6 +34,7 @@ export EDITOR=micro
 export VISUAL="$EDITOR"
 
 alias paths="echo $PATH | tr : '\n'"
+alias ls="lsd --long --human-readable --almost-all --total-size --group-dirs first"
 
 # Void Linux aliases
 if (($+commands[xbps-install])); then
