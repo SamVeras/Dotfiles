@@ -32,6 +32,7 @@ export GRIM_DEFAULT_DIR="$HOME/media/screenshots"
 
 export EDITOR=micro
 export VISUAL="$EDITOR"
+export LC_ALL="en_US.UTF-8"
 
 alias paths="echo $PATH | tr : '\n'"
 alias ls="lsd --long --human-readable --almost-all --total-size --group-dirs first"
