@@ -37,6 +37,7 @@ export LC_ALL="en_US.UTF-8"
 alias paths="echo $PATH | tr : '\n'"
 alias ls="lsd --long --human-readable --almost-all --total-size --group-dirs first"
 
+
 # Void Linux aliases
 if (($+commands[xbps-install])); then
     alias xbpi="sudo xbps-install"
@@ -44,6 +45,11 @@ if (($+commands[xbps-install])); then
     alias xbpq="xbps-query"
     alias xbpr="sudo xbps-remove"
     alias xbpu="sudo xbps-install -Syu"
+fi
+
+# openSUSE aliases
+if (($+commands[zypper])); then
+    alias zyp="sudo zypper"
 fi
 
 # Home directories setup

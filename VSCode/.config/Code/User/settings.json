@@ -15,9 +15,9 @@
   /* ---------------------------------------------------------------------- */
 
   "editor.fontFamily": "CommitMono Nerd Font Mono",
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.tabSize": 4,
-  // "editor.lineHeight": 1.25,
+  "editor.lineHeight": 1.25,
   "editor.fontWeight": "500",
   "editor.formatOnSave": true,
   "editor.fontLigatures": false,
@@ -29,7 +29,7 @@
   "editor.glyphMargin": false,
   "editor.lineDecorationsWidth": 10,
   "editor.guides.bracketPairsHorizontal": false,
-  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingBrackets": "beforeWhitespace",
   "editor.smoothScrolling": true,
   "editor.rulers": [
     { "column": 80, "color": "#ffffff0F" },
@@ -173,5 +173,14 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
   "tinymist.formatterMode": "typstyle",
-  "editor.minimap.renderCharacters": false
+  "editor.minimap.renderCharacters": false,
+  "[typst]": {
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+  },
+  "[typst-code]": {
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+  },
+  "editor.minimap.enabled": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "C_Cpp.default.intelliSenseMode": "gcc-x64"
 }
