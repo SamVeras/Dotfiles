@@ -55,7 +55,7 @@
   /*                                Workbench                               */
   /* ---------------------------------------------------------------------- */
 
-  "workbench.colorTheme": "Visual Studio Dark - C++",
+  "workbench.colorTheme": "Noctis High Contrast",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
@@ -88,7 +88,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[cpp]": {
-    "editor.defaultFormatter": "xaver.clang-format"
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "[c]": {
     "editor.defaultFormatter": "xaver.clang-format"
@@ -180,7 +180,7 @@
   "[typst-code]": {
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
   },
-  "editor.minimap.enabled": false,
   "editor.acceptSuggestionOnEnter": "off",
-  "C_Cpp.default.intelliSenseMode": "gcc-x64"
+  "explorer.confirmDragAndDrop": false,
+  "vsicons.dontShowNewVersionMessage": true
 }

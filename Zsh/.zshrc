@@ -13,7 +13,7 @@ plugins=(
 		zsh-syntax-highlighting
 		colored-man-pages
 		fzf-tab
-	  you-should-use
+	  # you-should-use # annoying
     wd
 )
 
@@ -29,14 +29,12 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib64:$HOME/li
 export PKG_CONFIG_PATH=PKG_CONFIG_PATH:/usr/local/lib64/pkgconfig
 export GRIM_DEFAULT_DIR="$HOME/media/screenshots"
 
-
 export EDITOR=micro
 export VISUAL="$EDITOR"
 export LC_ALL="en_US.UTF-8"
 
 alias paths="echo $PATH | tr : '\n'"
-alias ls="lsd --long --human-readable --almost-all --total-size --group-dirs first"
-
+alias lss="lsd --long --human-readable --almost-all --total-size --group-dirs first"
 
 # Void Linux aliases
 if (($+commands[xbps-install])); then
