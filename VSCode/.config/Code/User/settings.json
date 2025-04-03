@@ -40,6 +40,8 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "phase",
   "editor.scrollbar.horizontal": "hidden",
+  "editor.minimap.renderCharacters": false,
+  "editor.acceptSuggestionOnEnter": "off",
 
   /* ---------------------------------------------------------------------- */
   /*                                Terminal                                */
@@ -55,7 +57,7 @@
   /*                                Workbench                               */
   /* ---------------------------------------------------------------------- */
 
-  "workbench.colorTheme": "Noctis High Contrast",
+  "workbench.colorTheme": "Noctis Obscuro",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
@@ -71,15 +73,22 @@
   "zenMode.hideActivityBar": true,
   "zenMode.fullScreen": true,
 
+  /* ------------------------------------------------------------------------ */
+  /*                                 Explorer                                 */
+  /* ------------------------------------------------------------------------ */
+
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+
   /* ---------------------------------------------------------------------- */
   /*                                 Others                                 */
   /* ---------------------------------------------------------------------- */
 
   "security.workspace.trust.untrustedFiles": "open",
 
-  /* ---------------------------------------------------------------------- */
-  /*                               Formatters                               */
-  /* ---------------------------------------------------------------------- */
+  /* ------------------------------------------------------------------------ */
+  /*                                Formatting                                */
+  /* ------------------------------------------------------------------------ */
 
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
@@ -88,7 +97,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "xaver.clang-format"
   },
   "[c]": {
     "editor.defaultFormatter": "xaver.clang-format"
@@ -100,12 +109,21 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typst]": {
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+  },
+  "[typst-code]": {
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+  },
+  "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
@@ -114,9 +132,11 @@
   /* ---------------------------------------------------------------------- */
 
   /* -------------------------------- Black ------------------------------- */
+
   "black-formatter.args": ["--line-length=80"],
 
   /* --------------------------- Comment Divider -------------------------- */
+
   "comment-divider.length": 80,
   "comment-divider.shouldLengthIncludeIndent": true,
   "comment-divider.languagesMap": {
@@ -124,20 +144,29 @@
   },
 
   /* ------------------------------- Rewrap ------------------------------- */
+
   "rewrap.wrappingColumn": 80,
   "rewrap.doubleSentenceSpacing": true,
 
   /* --------------------------------- Git -------------------------------- */
+
   "git.autofetch": true,
 
   /* -------------------------------- C/C++ ------------------------------- */
+
   "C_Cpp.default.includePath": ["${workspaceFolder}/**"],
   "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+  "C_Cpp.default.intelliSenseMode": "gcc-x64",
+  "C_Cpp.default.cppStandard": "c++20",
+  "C_Cpp.default.cStandard": "c23",
+  "C_Cpp.vcFormat.indent.namespaceContents": false,
 
   /* ---------------------------- Clang Format ---------------------------- */
+
   "clang-format.executable": "clang-format",
 
   /* ------------------------------- Codeium ------------------------------ */
+
   "codeium.aggressiveShutdown": true,
   "codeium.enableCodeLens": false,
   "codeium.enableConfig": {
@@ -146,6 +175,7 @@
   },
 
   /* -------------------------------- Latex ------------------------------- */
+
   "latex-workshop.formatting.latex": "latexindent",
 
   /* ---------------------------------- Zig -------------------------------- */
@@ -159,6 +189,24 @@
   "zig.zls.inlayHintsShowStructLiteralFieldType": false,
   "zig.zls.inlayHintsShowVariableTypeHints": false,
 
+  /* ------------------------------- Others ------------------------------- */
+
+  "tinymist.formatterMode": "typstyle",
+  "githubPullRequests.pullBranch": "never",
+  "emeraldwalk.runonsave": {
+    "showElapsed": true
+    // "commands": [
+    //   {
+    //     // Format C++ files with Uncrustify
+    //     "match": "\\.(c|cc|cpp|h|hh|hpp)$",
+    //     "cmd": "uncrustify -c ${workspaceFolder}/.uncrustify.cfg --replace --no-backup --if-changed --mtime ${file}"
+    //     // "cmd": "cat {workspaceFolder}/.uncrustify.cfg"
+    //   }
+    // ]
+  },
+  "prettier.printWidth": 120,
+  "vsicons.dontShowNewVersionMessage": true,
+
   /* ---------------------------------------------------------------------- */
   /*                                  Etc.                                  */
   /* ---------------------------------------------------------------------- */
@@ -166,21 +214,11 @@
   "http.proxyStrictSSL": false,
   "http.systemCertificates": false,
   "files.associations": {
-    "*.tpp": "cpp"
+    "*.tpp": "cpp", // Templates
+    "*.ipp": "cpp" //  template Implementations
   },
   "python.languageServer": "Pylance",
-  "explorer.compactFolders": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
-  "tinymist.formatterMode": "typstyle",
-  "editor.minimap.renderCharacters": false,
-  "[typst]": {
-    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
-  },
-  "[typst-code]": {
-    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
-  },
-  "editor.acceptSuggestionOnEnter": "off",
-  "explorer.confirmDragAndDrop": false,
-  "vsicons.dontShowNewVersionMessage": true
+  "remote.autoForwardPortsSource": "hybrid"
 }
