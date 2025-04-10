@@ -220,5 +220,7 @@
   "python.languageServer": "Pylance",
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
-  "remote.autoForwardPortsSource": "hybrid"
+  "remote.autoForwardPortsSource": "hybrid",
+  "doxdocgen.c.triggerSequence": "/*!",
+  "doxdocgen.c.firstLine": "/*!"
 }
