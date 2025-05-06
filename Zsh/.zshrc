@@ -35,6 +35,7 @@ export LC_ALL="en_US.UTF-8"
 
 alias paths="echo $PATH | tr : '\n'"
 alias lss="lsd --long --human-readable --almost-all --total-size --group-dirs first"
+alias sudo-wireshark="sudo DISPLAY=$DISPLAY wireshark"
 
 # Void Linux aliases
 if (($+commands[xbps-install])); then
