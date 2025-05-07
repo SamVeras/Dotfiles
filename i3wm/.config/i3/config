@@ -28,9 +28,9 @@ bindsym $mod+s scratchpad show
 bindsym $mod+Shift+s move scratchpad
 
 # -------------------------- WINDOW FOCUS & MOVEMENT ------------------------- #
-set $left j
-set $down k
-set $up i
+set $left h
+set $down j
+set $up k
 set $right l
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
@@ -51,12 +51,14 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # -------------------------------- LAYOUT KEYS ------------------------------- #
-bindsym $mod+h split h
-bindsym $mod+v split v
+bindsym $mod+p split h
+#bindsym $mod+h split h
+bindsym $mod+o split v
+#bindsym $mod+v split v
+bindsym $mod+e layout toggle split
 bindsym $mod+f fullscreen toggle
 # bindsym $mod+s layout stacking
 # bindsym $mod+w layout tabbed
-# bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
