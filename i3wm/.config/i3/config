@@ -4,12 +4,13 @@ tiling_drag modifier titlebar
 
 # Mod1: Alt, Mod4: Win
 set $mod Mod4
-set $term zutty
+set $term zutty -font Hack -fontsize 16
 
 floating_modifier $mod
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+Shift+s exec flameshot gui
 
 # ---------------------------------- CONFIGS --------------------------------- #
 focus_follows_mouse no
@@ -24,8 +25,8 @@ gaps outer 0
 smart_gaps off
 hide_edge_borders smart_no_gaps
 
-bindsym $mod+s scratchpad show
-bindsym $mod+Shift+s move scratchpad
+# bindsym $mod+s scratchpad show
+# bindsym $mod+Shift+s move scratchpad
 
 # -------------------------- WINDOW FOCUS & MOVEMENT ------------------------- #
 set $left h
